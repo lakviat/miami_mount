@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Mount TV Icon</title>
+  <desc id="desc">TV-style icon with a stylized M in blue and navy.</desc>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 26h86v76H12z" stroke="#111d4f" stroke-width="8"/>
+    <path d="M98 40h18v48H98" stroke="#111d4f" stroke-width="8"/>
+    <path d="M20 102h44" stroke="#111d4f" stroke-width="8"/>
+    <path d="M29 18 21 8m50 10 8-10" stroke="#2d78df" stroke-width="7"/>
+    <path d="M24 110 17 121m42-11 7 11" stroke="#2d78df" stroke-width="7"/>
+    <path d="M30 82V44h11l14 19 14-19h11v38" stroke="#2d78df" stroke-width="7"/>
+    <path d="M55 63 69 82V44" stroke="#2d78df" stroke-width="7"/>
+  </g>
+</svg>

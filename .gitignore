@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / local config
+.env
+.env.*
+*.local
+
+# Dependency and build output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+
+# Python cache (if local tooling is used)
+__pycache__/
+*.pyc
+

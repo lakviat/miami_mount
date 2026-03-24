@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 190" role="img" aria-labelledby="title desc">
+  <title id="title">Mount TV Logo</title>
+  <desc id="desc">Mount TV wordmark with TV icon and tagline Clean installs. Sharp finish.</desc>
+
+  <g transform="translate(8 8)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 26h170v130H12z" stroke="#111d4f" stroke-width="10"/>
+    <path d="M182 50h34v82h-34" stroke="#111d4f" stroke-width="10"/>
+    <path d="M28 160h84" stroke="#111d4f" stroke-width="10"/>
+    <path d="M40 16 26 2m100 14 14-14" stroke="#2d78df" stroke-width="10"/>
+    <path d="M34 170 22 186m80-16 12 16" stroke="#2d78df" stroke-width="10"/>
+    <path d="M32 126V48h18l30 36 30-36h18v78" stroke="#2d78df" stroke-width="10"/>
+    <path d="M80 84 110 126V48" stroke="#2d78df" stroke-width="10"/>
+  </g>
+
+  <text x="245" y="90" fill="#111d4f" font-family="DM Sans, Arial, sans-serif" font-size="88" font-weight="700">Mount TV</text>
+  <text x="250" y="148" fill="#101a3d" font-family="DM Sans, Arial, sans-serif" font-size="56" font-weight="500">Clean installs. Sharp finish.</text>
+</svg>
