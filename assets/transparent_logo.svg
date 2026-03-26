@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">TV Mount 360 logo</title>
+  <desc id="desc">TV monitor icon with 360 degree arrow and TV Mount 360 wordmark</desc>
+
+  <defs>
+    <linearGradient id="ringGrad" x1="70" y1="230" x2="360" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a46bf"/>
+      <stop offset="1" stop-color="#20d2ef"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="138" y1="84" x2="292" y2="202" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a1f35"/>
+      <stop offset="1" stop-color="#203e63"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="360" y1="92" x2="1020" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a3356"/>
+      <stop offset="1" stop-color="#102845"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1280" height="420" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0a1730" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <path
+      d="M114 236c24 56 102 92 188 92 83 0 159-34 185-85"
+      fill="none"
+      stroke="url(#ringGrad)"
+      stroke-width="20"
+      stroke-linecap="round"
+    />
+    <path d="M305 242l45-7-23 39z" fill="#20d2ef"/>
+    <path
+      d="M346 173c-28-47-96-77-173-77-70 0-132 24-165 62"
+      fill="none"
+      stroke="#2f4ec4"
+      stroke-opacity="0.9"
+      stroke-width="16"
+      stroke-linecap="round"
+    />
+
+    <g transform="translate(128 82)">
+      <path d="M0 12 214 0v164L0 142z" fill="none" stroke="#c7d1de" stroke-width="11" stroke-linejoin="round"/>
+      <path d="M11 24 200 13v137L11 131z" fill="url(#screenGrad)"/>
+      <path d="M25 34 110 28 198 13 64 11z" fill="#ffffff" fill-opacity="0.18"/>
+      <path d="M77 157 164 151l44 17-91 6z" fill="#c7d1de"/>
+      <path d="M116 153 164 151l44 17-40-1z" fill="#f3f8ff" fill-opacity="0.5"/>
+    </g>
+
+    <text
+      x="382"
+      y="286"
+      fill="url(#textGrad)"
+      font-family="Space Grotesk, DM Sans, Arial, sans-serif"
+      font-size="128"
+      font-weight="700"
+      letter-spacing="0.5"
+    >TV Mount 360</text>
+  </g>
+</svg>
