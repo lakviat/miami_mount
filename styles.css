@@ -1398,7 +1398,12 @@ main.reference-layout::after {
 }
 
 .service-card-visual img {
-  aspect-ratio: 13 / 10;
+  display: block;
+  width: 100%;
+  height: clamp(220px, 18vw, 300px);
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .service-card-visual h3 {
@@ -1636,6 +1641,10 @@ main.reference-layout::after {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .service-card-visual img {
+    height: clamp(220px, 24vw, 300px);
+  }
+
   .pricing-layout {
     grid-template-columns: 1fr;
   }
@@ -1704,6 +1713,10 @@ main.reference-layout::after {
   .service-card-visual h3,
   .faq-list summary {
     font-size: 1.25rem;
+  }
+
+  .service-card-visual img {
+    height: 240px;
   }
 
   .size-card {
