@@ -678,7 +678,8 @@ input {
   grid-template-columns: minmax(280px, 1.4fr) minmax(150px, 0.7fr) minmax(260px, 1fr);
   gap: 30px;
   align-items: start;
-  max-width: 1280px;
+  width: 100%;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
   padding: 30px 32px;
