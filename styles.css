@@ -15,7 +15,7 @@
   --radius-lg: 24px;
   --radius-md: 18px;
   --max: 1200px;
-  --hero-background: url("assets/hero-tv-wall-modern.svg");
+  --hero-background: url("assets/new_service.png");
 }
 
 * {
@@ -97,8 +97,8 @@ input {
 .brand-logo {
   display: block;
   width: auto;
-  height: clamp(66px, 5.4vw, 92px);
-  max-width: min(34vw, 320px);
+  height: clamp(86px, 6.8vw, 122px);
+  max-width: min(40vw, 432px);
   object-fit: contain;
   object-position: left center;
 }
@@ -962,8 +962,8 @@ input {
 
   .brand-logo {
     width: auto;
-    height: clamp(58px, 4.9vw, 80px);
-    max-width: min(32vw, 280px);
+    height: clamp(74px, 6vw, 106px);
+    max-width: min(38vw, 374px);
   }
 
   .topbar-cta {
@@ -989,8 +989,8 @@ input {
 
   .brand-logo {
     width: auto;
-    height: 64px;
-    max-width: min(56vw, 260px);
+    height: 82px;
+    max-width: min(62vw, 348px);
   }
 
   .topbar {
@@ -1023,8 +1023,8 @@ input {
 
   .brand-logo {
     width: auto;
-    height: 56px;
-    max-width: min(54vw, 220px);
+    height: 72px;
+    max-width: min(60vw, 288px);
   }
 
   .topbar-quote {
@@ -1084,8 +1084,8 @@ input {
 
   .brand-logo {
     width: auto;
-    height: 48px;
-    max-width: min(52vw, 190px);
+    height: 62px;
+    max-width: min(58vw, 252px);
   }
 
   .topbar-quote {
@@ -1165,10 +1165,10 @@ main.reference-layout::before {
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(circle at 50% 12%, rgba(142, 192, 236, 0.22), rgba(142, 192, 236, 0) 46%),
-    linear-gradient(180deg, rgba(246, 250, 255, 0.2), rgba(248, 242, 232, 0.12)),
-    var(--hero-background, url("assets/hero-tv-wall-modern.svg")) center top / cover no-repeat;
-  filter: saturate(1.04) brightness(1.1) contrast(0.95) blur(1px);
+    radial-gradient(circle at 50% 10%, rgba(163, 205, 238, 0.18), rgba(163, 205, 238, 0) 42%),
+    linear-gradient(180deg, rgba(247, 248, 243, 0.16), rgba(242, 234, 221, 0.1)),
+    var(--hero-background, url("assets/new_service.png")) center 24% / cover no-repeat;
+  filter: saturate(0.92) brightness(0.88) contrast(0.94) blur(1.8px);
   transform: scale(1.02);
 }
 
@@ -1178,8 +1178,8 @@ main.reference-layout::after {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at center, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.01) 40%, rgba(0, 0, 0, 0.09) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.16));
+    radial-gradient(circle at center, rgba(9, 15, 24, 0.11), rgba(9, 15, 24, 0.03) 38%, rgba(9, 15, 24, 0.16) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 248, 240, 0.12));
   pointer-events: none;
 }
 
@@ -1213,8 +1213,8 @@ main.reference-layout::after {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(239, 247, 255, 0.28) 0%, rgba(255, 255, 255, 0.09) 34%, rgba(9, 14, 22, 0.04) 72%, rgba(9, 14, 22, 0.09) 100%),
-    radial-gradient(circle at center, rgba(8, 12, 18, 0.006), rgba(8, 12, 18, 0.075) 82%);
+    linear-gradient(180deg, rgba(244, 246, 246, 0.18) 0%, rgba(255, 255, 255, 0.06) 28%, rgba(9, 14, 22, 0.08) 68%, rgba(9, 14, 22, 0.15) 100%),
+    radial-gradient(circle at center, rgba(8, 12, 18, 0.02), rgba(8, 12, 18, 0.11) 82%);
   pointer-events: none;
 }
 
@@ -1283,7 +1283,6 @@ main.reference-layout::after {
 
 #services .section-heading h2,
 #pricing .section-heading h2,
-.why-section .section-heading h2,
 #gallery .section-heading h2,
 #reviews .section-heading h2,
 #faq .section-heading h2,
@@ -1294,14 +1293,12 @@ main.reference-layout::after {
 
 #services .section-heading p,
 #pricing .section-heading p,
-.why-section .section-heading p,
 #gallery .section-heading p,
 #reviews .section-heading p,
 #faq .section-heading p,
 .size-selector .section-heading p,
 #services .eyebrow,
 #pricing .eyebrow,
-.why-section .eyebrow,
 #gallery .eyebrow,
 #reviews .eyebrow,
 #faq .eyebrow,
