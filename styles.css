@@ -15,7 +15,7 @@
   --radius-lg: 24px;
   --radius-md: 18px;
   --max: 1200px;
-  --hero-background: url("assets/new_service.png");
+  --hero-background: url("assets/new_service-hero.jpg");
 }
 
 * {
@@ -1168,9 +1168,18 @@ main.reference-layout::before {
   background:
     radial-gradient(circle at 50% 10%, rgba(163, 205, 238, 0.18), rgba(163, 205, 238, 0) 42%),
     linear-gradient(180deg, rgba(247, 248, 243, 0.16), rgba(242, 234, 221, 0.1)),
-    var(--hero-background, url("assets/new_service.png")) center 24% / cover no-repeat;
+    var(--hero-background, url("assets/new_service-hero.jpg")) center 24% / cover no-repeat;
   filter: saturate(0.92) brightness(0.88) contrast(0.94) blur(1.8px);
   transform: scale(1.02);
+}
+
+#services,
+#pricing,
+#reviews,
+#faq,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
 }
 
 main.reference-layout::after {
