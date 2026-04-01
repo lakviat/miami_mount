@@ -12,6 +12,8 @@ const estimateValue = document.getElementById("estimateValue");
 const estimateBreakdown = document.getElementById("estimateBreakdown");
 const quoteForm = document.getElementById("quoteForm");
 const sizeCards = Array.from(document.querySelectorAll("[data-quote-size]"));
+const contactFab = document.querySelector("[data-contact-fab]");
+const contactFabToggle = contactFab?.querySelector(".contact-fab-toggle");
 const dynamicHoverCards = Array.from(
   document.querySelectorAll(".size-card, .service-card-visual, .benefit-card, .pricing-panel")
 );
@@ -155,6 +157,21 @@ function closeQuote() {
   modal.close();
 }
 
+function setContactFabState(isOpen) {
+  if (!contactFab || !contactFabToggle) {
+    return;
+  }
+
+  contactFab.classList.toggle("is-open", isOpen);
+  contactFabToggle.setAttribute("aria-expanded", String(isOpen));
+  contactFabToggle.setAttribute("aria-label", isOpen ? "Close contact links" : "Open contact links");
+
+  const panel = contactFab.querySelector(".contact-fab-panel");
+  if (panel) {
+    panel.setAttribute("aria-hidden", String(!isOpen));
+  }
+}
+
 function getDynamicSettings(card) {
   if (card.classList.contains("service-card-visual")) {
     return { lift: 7, scale: 1.025, tilt: 5, shift: 6 };
@@ -286,6 +303,24 @@ modal.addEventListener("click", (event) => {
     closeQuote();
   }
 });
+
+if (contactFab && contactFabToggle) {
+  contactFabToggle.addEventListener("click", () => {
+    setContactFabState(!contactFab.classList.contains("is-open"));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!contactFab.contains(event.target)) {
+      setContactFabState(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setContactFabState(false);
+    }
+  });
+}
 
 setStep(1);
 initDynamicHoverCards();
