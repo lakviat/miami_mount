@@ -1414,13 +1414,6 @@ main.reference-layout::after {
   text-align: center;
 }
 
-.hero-call-button {
-  color: #fff;
-  background: linear-gradient(135deg, rgba(24, 67, 112, 0.94), rgba(43, 118, 201, 0.94));
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 12px 24px rgba(8, 24, 42, 0.26);
-}
-
 .section-heading-centered {
   margin-left: auto;
   margin-right: auto;
