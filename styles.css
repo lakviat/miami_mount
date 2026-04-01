@@ -1401,8 +1401,24 @@ main.reference-layout::after {
 }
 
 .reference-layout .hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 12px;
   margin: 30px 0 0;
+}
+
+.reference-layout .hero-actions .button {
+  min-width: clamp(230px, 35vw, 320px);
+  text-align: center;
+}
+
+.hero-call-button {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(24, 67, 112, 0.94), rgba(43, 118, 201, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 24px rgba(8, 24, 42, 0.26);
 }
 
 .section-heading-centered {
@@ -1896,23 +1912,42 @@ main.reference-layout::after {
   }
 
   .contact-fab {
-    right: max(16px, env(safe-area-inset-right));
-    bottom: max(20px, env(safe-area-inset-bottom));
-    gap: 12px;
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    gap: 10px;
+  }
+
+  .contact-fab-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 999px;
+    background: rgba(10, 21, 36, 0.34);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 14px 28px rgba(8, 18, 32, 0.24);
+    transform: translateX(10px) scale(0.96);
+  }
+
+  .contact-fab.is-open .contact-fab-panel {
+    transform: translateX(0) scale(1);
   }
 
   .contact-fab-link {
     min-width: 0;
-    width: 62px;
-    height: 62px;
+    width: 52px;
+    height: 52px;
     padding: 0;
+    background: transparent;
+    box-shadow: none;
     border-radius: 50%;
   }
 
   .contact-fab-icon {
-    width: 62px;
-    height: 62px;
-    box-shadow: none;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 8px 16px rgba(9, 26, 44, 0.22);
   }
 
   .contact-fab-label {
@@ -1920,8 +1955,12 @@ main.reference-layout::after {
   }
 
   .contact-fab-toggle {
-    width: 66px;
-    height: 66px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .reference-layout .hero-actions .button {
+    min-width: min(88vw, 310px);
   }
 }
 
