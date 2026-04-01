@@ -234,18 +234,18 @@ input {
 
 .contact-fab {
   position: fixed;
-  right: clamp(14px, 2.2vw, 30px);
-  bottom: clamp(18px, 2.8vw, 34px);
+  right: max(clamp(14px, 2.2vw, 30px), env(safe-area-inset-right));
+  bottom: max(clamp(18px, 2.8vw, 34px), env(safe-area-inset-bottom));
   z-index: 42;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  gap: 14px;
 }
 
 .contact-fab-panel {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   opacity: 0;
   transform: translateY(10px) scale(0.96);
   transform-origin: bottom right;
@@ -269,9 +269,9 @@ input {
 }
 
 .contact-fab-link {
-  gap: 12px;
-  min-width: 196px;
-  padding: 10px 12px 10px 10px;
+  gap: 14px;
+  min-width: 220px;
+  padding: 12px 14px 12px 12px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 14px 28px rgba(11, 24, 39, 0.16);
@@ -284,9 +284,9 @@ input {
 }
 
 .contact-fab-icon {
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -297,13 +297,13 @@ input {
 
 .contact-fab-icon svg,
 .contact-fab-toggle svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
 .contact-fab-label {
-  font-size: 0.96rem;
+  font-size: 1.02rem;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -326,8 +326,8 @@ input {
 
 .contact-fab-toggle {
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
@@ -1896,21 +1896,22 @@ main.reference-layout::after {
   }
 
   .contact-fab {
-    right: 14px;
-    bottom: 18px;
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(20px, env(safe-area-inset-bottom));
+    gap: 12px;
   }
 
   .contact-fab-link {
     min-width: 0;
-    width: 54px;
-    height: 54px;
+    width: 62px;
+    height: 62px;
     padding: 0;
     border-radius: 50%;
   }
 
   .contact-fab-icon {
-    width: 54px;
-    height: 54px;
+    width: 62px;
+    height: 62px;
     box-shadow: none;
   }
 
@@ -1919,8 +1920,8 @@ main.reference-layout::after {
   }
 
   .contact-fab-toggle {
-    width: 58px;
-    height: 58px;
+    width: 66px;
+    height: 66px;
   }
 }
 
