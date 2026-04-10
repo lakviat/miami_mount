@@ -14,6 +14,7 @@ const quoteForm = document.getElementById("quoteForm");
 const sizeCards = Array.from(document.querySelectorAll("[data-quote-size]"));
 const contactFab = document.querySelector("[data-contact-fab]");
 const contactFabToggle = contactFab?.querySelector(".contact-fab-toggle");
+const callTriggers = Array.from(document.querySelectorAll("[data-call-trigger]"));
 const dynamicHoverCards = Array.from(
   document.querySelectorAll(".size-card, .service-card-visual, .benefit-card, .pricing-panel")
 );
@@ -155,6 +156,14 @@ function openQuoteWithSize(size) {
 
 function closeQuote() {
   modal.close();
+}
+
+function triggerPhoneCall(phoneNumber) {
+  if (!phoneNumber) {
+    return;
+  }
+
+  window.location.href = `tel:${phoneNumber}`;
 }
 
 function setContactFabState(isOpen) {
@@ -321,6 +330,19 @@ if (contactFab && contactFabToggle) {
     }
   });
 }
+
+callTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", (event) => {
+    const phoneNumber = trigger.dataset.callTrigger;
+
+    if (!phoneNumber) {
+      return;
+    }
+
+    event.preventDefault();
+    triggerPhoneCall(phoneNumber);
+  });
+});
 
 setStep(1);
 initDynamicHoverCards();
