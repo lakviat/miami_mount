@@ -20,6 +20,7 @@ const dynamicHoverCards = Array.from(
 );
 
 let currentStep = 1;
+let hasTrackedQuoteConversion = false;
 
 const pricing = {
   tvSize: { small: 89, medium: 129, large: 159, xl: 219 },
@@ -75,6 +76,10 @@ function setStep(stepNumber) {
   prevButton.style.visibility = currentStep === 1 ? "hidden" : "visible";
   nextButton.textContent = currentStep === visualSteps - 1 ? "See Estimate" : "Next";
   nextButton.style.display = currentStep === visualSteps ? "none" : "inline-flex";
+
+  if (currentStep === visualSteps) {
+    trackQuoteConversion();
+  }
 }
 
 function getRadioValue(name) {
@@ -133,6 +138,24 @@ function buildEstimate() {
   copyButton.dataset.summary = summary;
 }
 
+function trackQuoteConversion() {
+  if (hasTrackedQuoteConversion) {
+    return;
+  }
+
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", "conversion", {
+    send_to: "AW-18039081910/IcXJCK2WvI8cELaX2plD",
+    value: 1.0,
+    currency: "USD"
+  });
+
+  hasTrackedQuoteConversion = true;
+}
+
 function openQuote() {
   if (typeof modal.showModal === "function") {
     modal.showModal();
@@ -140,6 +163,7 @@ function openQuote() {
     modal.setAttribute("open", "open");
   }
 
+  hasTrackedQuoteConversion = false;
   setStep(1);
 }
 
